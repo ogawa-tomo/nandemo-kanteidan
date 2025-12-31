@@ -9,6 +9,7 @@ function App() {
     isAnimating,
     isCompleted,
     isIdle,
+    showResult,
     startAppraisal,
     reset,
   } = useAppraisal();
@@ -17,7 +18,7 @@ function App() {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl px-4 sm:px-6 md:px-8 space-y-8">
         {/* 鑑定額表示パネル */}
-        <AppraisalPanel value={currentValue} />
+        <AppraisalPanel value={currentValue} isAnimating={isAnimating} />
 
         {/* 鑑定士イラスト */}
         <div className="flex justify-center">
@@ -29,9 +30,9 @@ function App() {
         </div>
 
         {/* 結果テキスト */}
-        {isCompleted && currentValue !== null && (
+        {currentValue !== null && showResult && (
           <div className="flex justify-center">
-            <ResultText value={currentValue} show={isCompleted} />
+            <ResultText value={currentValue} show={showResult} />
           </div>
         )}
 
