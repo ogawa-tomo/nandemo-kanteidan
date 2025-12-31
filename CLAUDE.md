@@ -382,13 +382,13 @@ interface AppraisalState {
 ## 実装優先度
 
 ### Phase 1: 基本機能（MVP）
-- [ ] プロジェクトセットアップ（React + TypeScript + Vite）
-- [ ] Tailwind CSSのインストールと設定
-- [ ] カスタムカラー・アニメーションの設定（tailwind.config.js）
-- [ ] 基本レイアウト作成
-- [ ] 画像の配置と表示
-- [ ] ランダム鑑定額生成機能
-- [ ] 鑑定開始ボタンとリセット機能
+- [x] プロジェクトセットアップ（React + TypeScript + Vite）
+- [x] Tailwind CSSのインストールと設定
+- [x] カスタムカラー・アニメーションの設定（tailwind.config.js）
+- [x] 基本レイアウト作成
+- [x] 画像の配置と表示
+- [x] ランダム鑑定額生成機能
+- [x] 鑑定開始ボタンとリセット機能
 
 ### Phase 2: アニメーション
 - [ ] スロットマシン式アニメーション実装
